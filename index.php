@@ -40,14 +40,15 @@ curl_close($sh);
         <!-- place navbar here -->
     </header>
     <main>
-        <h1 class="display-1">Proxima Pelicula de Marvel</h1>
+        <h1 class="display-1 text-center">Proxima Pelicula de Marvel</h1>
         <section>
             <img src="<?= $data["poster_url"] ?>" width="300", alt="Poster de Pelicula"
             style="border-radius:16px"/>
         </section>
 
         <hgroup>
-            <h2><?= $data["title"] ?> Se estrena en <?= $data["days_until"] ?> dias</h2>
+            <h2><?= $data["title"]?> </h2>
+            <h3>Se estrena en <?= $data["days_until"] ?> dias</h3>
             <p>Fecha de estreno: <?= $data["release_date"] ?></p>
             <p>La Proxima Pelicula sera: <?= $data["following_production"]["title"] ?></p>
 
